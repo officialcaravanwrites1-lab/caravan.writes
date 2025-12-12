@@ -1,0 +1,327 @@
+/* --- CORPORATE PROFESSIONAL PALETTE --- */
+/* Primary Background: #f7f9fc (Very Light Gray/Off-White) */
+/* Secondary Dark: #102a43 (Deep Corporate Blue/Navy) */
+/* Accent Color (CTA/Highlight): #33a7cc (Professional Sky Blue/Teal) */
+/* Text Dark: #334e68 */
+
+/* Basic Reset and Typography */
+body {
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc; /* Light background */
+    color: #334e68; /* Dark text */
+    line-height: 1.6;
+}
+
+a {
+    color: #33a7cc; /* Sky Blue accent */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1f8eb3;
+}
+
+/* --- Hotbar/Header Styling --- */
+.hotbar {
+    background-color: #ffffff; /* White background for professionalism */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft, corporate shadow */
+    border-bottom: 2px solid #33a7cc; /* Thin accent line */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #102a43; /* Deep Navy logo */
+    letter-spacing: 0.5px;
+}
+
+.hotbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.hotbar nav ul li {
+    margin-left: 30px;
+}
+
+.hotbar nav ul li a {
+    color: #486581; /* Muted gray text */
+    font-weight: 500;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+/* Professional Hover and Active State */
+.hotbar nav ul li a:hover {
+    color: #102a43;
+}
+
+.hotbar nav ul li a.active {
+    color: #102a43;
+    border-bottom: 3px solid #33a7cc; /* Active uses the accent color */
+    padding-bottom: 3px;
+    font-weight: 600;
+}
+
+/* --- Main Content Styling --- */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff; /* Sections are white cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h1, .content-section h2 {
+    color: #102a43; 
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 40px;
+    background: #e1e8ed; /* Light gray background for a clean feel */
+    margin-top: 0;
+    border-radius: 0;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    border-bottom: none;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #102a43;
+}
+
+.tagline {
+    font-size: 1.25em;
+    color: #486581;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #33a7cc; /* Sky Blue CTA */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: #1f8eb3;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(51, 167, 204, 0.5); /* Blue shadow glow */
+}
+
+/* --- Articles Grid (Business Insights) --- */
+
+.trending-grid-section {
+    padding-bottom: 80px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.article-card {
+    background-color: #ffffff; /* White cards on white background for subtle contrast */
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e1e8ed; /* Subtle border */
+    /* Floating Effect: Clean, light shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Lifted shadow */
+}
+
+.article-card h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.article-card h3 a {
+    color: #102a43; /* Dark title text */
+    display: block;
+    font-weight: 600;
+}
+
+.article-meta {
+    color: #33a7cc; /* Accent color for metadata */
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.article-card p:last-of-type {
+    color: #486581;
+}
+
+/* --- Contact Page Styling --- */
+.contact-details {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #e1e8ed; 
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    color: #486581;
+}
+
+.connect-text {
+    font-style: italic;
+    color: #102a43;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.contact-link {
+    color: #33a7cc; 
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #1f8eb3;
+}
+
+/* --- Testimonial Grid (Client Success Stories) --- */
+.testimonials-grid-section {
+    padding-bottom: 80px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e1e8ed; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1.7;
+    color: #334e68;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: 600;
+    margin-top: 10px;
+    color: #102a43; 
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title {
+    color: #486581;
+    font-weight: 400;
+    text-transform: none;
+}
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #102a43; /* Dark Navy footer */
+    color: #ced4da;
+    font-size: 0.85em;
+    border-top: 1px solid #33a7cc;
+}
+
+/* Utility Class (from script.js) */
+.hidden {
+    display: none !important;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .hotbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    
+    .hotbar nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .hotbar nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+    }
+    
+    .articles-grid, .testimonials-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+    }
+}
